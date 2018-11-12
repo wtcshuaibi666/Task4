@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- tiles基础模板 -->
+    <definition name="baseTemplate"  template="/WEB-INF/jsp/template.jsp">
+        <!--定义模版-->
+        <put-attribute name="tittle" value="首页"/>
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp"/>
+        <put-attribute name="top" value="/WEB-INF/jsp/top.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+
+    <!--继承模板-->
+    <definition name="home" extends="baseTemplate">
+        <put-attribute name="tittle" value="首页"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/body.jsp"/>
+    </definition>
+
+    <!--继承模板-->
+    <definition name="job" extends="baseTemplate">
+        <put-attribute name="tittle" value="职业"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/body1.jsp"/>
+    </definition>
+</tiles-definitions>
