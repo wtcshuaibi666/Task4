@@ -8,7 +8,7 @@ public class Person {
     private int excellent;
     private String nickname;
     private int work;
-    private String type;
+    private int type;
 
     public int getId() {
         return id;
@@ -66,11 +66,11 @@ public class Person {
         this.work = work;
     }
 
-    public String getType() {
+    public int getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(int type) {
         this.type = type;
     }
 

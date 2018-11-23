@@ -12,4 +12,5 @@ public interface PersonMapper {
     Integer findByLearn();
     Integer getType(String type);
 
+
 }

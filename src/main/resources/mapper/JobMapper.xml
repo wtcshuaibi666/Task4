@@ -7,9 +7,8 @@
  -->
 <mapper namespace="com.jnshu.mapper.JobMapper">
     <select id="getListJob" resultType="com.jnshu.entity.Job">
-select * FROM job
+ select job.*,COUNT(*) AS proCount from xuesheng1 RIGHT JOIN job
+        on job.id = xuesheng1.type group BY job.id
     </select>
-<select id="getJobById" parameterType="com.jnshu.entity.Job" resultType="com.jnshu.entity.Job">
-    select * FROM job WHERE id=#{id}
-</select>
+
 </mapper>

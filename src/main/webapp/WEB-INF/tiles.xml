@@ -25,4 +25,19 @@
         <put-attribute name="tittle" value="职业"/>
         <put-attribute name="body" value="/WEB-INF/jsp/body1.jsp"/>
     </definition>
+    <!--继承模板-->
+    <definition name="login" extends="baseTemplate">
+        <put-attribute name="tittle" value="登录"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/body2.jsp"/>
+    </definition>
+    <!--继承模板-->
+    <definition name="register" extends="baseTemplate">
+        <put-attribute name="tittle" value="注册"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/body3.jsp"/>
+    </definition>
+    <!--继承模板-->
+    <definition name="ok" extends="baseTemplate">
+        <put-attribute name="tittle" value="注册成功"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/body4.jsp"/>
+    </definition>
 </tiles-definitions>

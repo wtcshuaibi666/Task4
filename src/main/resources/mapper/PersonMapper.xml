@@ -18,7 +18,8 @@
         select * FROM xuesheng1 WHERE excellent="1"
     </select>
 <select id="getType" resultType="Integer">
-     select count(*) from xuesheng1 where type like CONCAT('%',#{type},'%')
+ select count(*) from xuesheng1 where type like CONCAT('%',#{type},'%')
 </select>
+
 
 </mapper>

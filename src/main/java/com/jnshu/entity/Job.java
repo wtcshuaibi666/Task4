@@ -14,7 +14,8 @@ public class Job {
     private long create_at;
     private long update_at;
     private String growth;
-    private String procount;
+    private int proCount;
+
     public int getId() {
         return id;
     }
@@ -118,12 +119,12 @@ public class Job {
         this.growth = growth;
     }
 
-    public String getProcount() {
-        return procount;
+    public int getProCount() {
+        return proCount;
     }
 
-    public void setProcount(String procount) {
-        this.procount = procount;
+    public void setProCount(int proCount) {
+        this.proCount = proCount;
     }
 
     @Override
@@ -142,7 +143,8 @@ public class Job {
                 ", create_at=" + create_at +
                 ", update_at=" + update_at +
                 ", growth='" + growth + '\'' +
-                ", procount='" + procount + '\'' +
+                ", proCount=" + proCount +
                 '}';
     }
 }
+

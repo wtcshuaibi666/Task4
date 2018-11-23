@@ -5,6 +5,7 @@
 <configuration>
     <!--别名设置-->
     <typeAliases>
+        <typeAlias type="com.jnshu.entity.User" alias="User"/>
         <typeAlias  type="com.jnshu.entity.Job" alias="Job"/>
         <typeAlias type="com.jnshu.entity.Person" alias="Person"/>
     </typeAliases>

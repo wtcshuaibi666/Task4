@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface JobMapper {
     List<Job> getListJob();
-    Job getJobById(int id);
+
 }

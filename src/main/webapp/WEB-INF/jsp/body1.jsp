@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="warp-class2">
-                        <b class="text-b">有${job.procount}人正在学
+                        <b class="text-b">有${job.proCount}人正在学
                             创建时间: <date:date value="${job.create_at}"/>
                         </b>
 
