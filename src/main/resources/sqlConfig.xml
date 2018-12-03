@@ -8,5 +8,6 @@
         <typeAlias type="com.jnshu.entity.User" alias="User"/>
         <typeAlias  type="com.jnshu.entity.Job" alias="Job"/>
         <typeAlias type="com.jnshu.entity.Person" alias="Person"/>
+        <typeAlias type="com.jnshu.entity.Student" alias="Student"/>
     </typeAliases>
 </configuration>

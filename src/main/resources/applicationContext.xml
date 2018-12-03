@@ -46,6 +46,6 @@
         <property name="basePackage" value="com.jnshu.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
-
-
+    <import resource="spring-memcached.xml"/>
+    <import resource="spring-redis.xml"/>
 </beans>

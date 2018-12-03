@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jnshu.mapper.StudentMapper">
+    <insert id="addStudent" useGeneratedKeys="true" keyProperty="id" parameterType="Student">
+        insert INTO xzy1(name,qq,type,entranceTime,school,onlineNum,dailylink,wish,bro,create_at,update_at)
+    value (#{name},#{qq},#{type},#{entranceTime},#{school},#{onlineNum},#{dailylink},#{wish},#{bro},#{create_at},#{update_at})
+    </insert>
+    <update id="updateStudent" parameterType="Student">
+  update xzy1 set name=#{name},qq=#{qq},entranceTime=#{entranceTime},school=#{school},onlineNum=#{onlineNum},dailylink=#{dailylink},
+    wish=#{wish},bro=#{bro},create_at=#{create_at},update_at=#{update_at} where id=#{id}
+    </update>
+    <delete id="deleteStudent" parameterType="int">
+        DELETE FROM xzy1 where id = #{id}
+    </delete>
+    <select id="findAll" resultType="Student">
+      select id,name,qq,type,entranceTime,school,onlineNum,dailylink,wish,bro,create_at,update_at from xzy1
+
+    </select>
+    <select id="findStudentById" resultType="Student">
+        SELECT * FROM xzy1 WHERE id = #{id}
+    </select>
+</mapper>
